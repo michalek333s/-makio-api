@@ -38,7 +38,7 @@ import { REEL_MEDIA_DIR } from './services/reelMediaStore.js';
 import { mkdirSync } from 'fs';
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = Number(process.env.PORT) || (process.env.RAILWAY_ENVIRONMENT ? 8080 : 3001);
 
 try {
   mkdirSync(REEL_MEDIA_DIR, { recursive: true });
@@ -169,8 +169,8 @@ app.use((err, req, res, next) => {
 
 assertProductionGuards();
 
-app.listen(PORT, () => {
-  console.log(`✅ Makio Backend běží na http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`✅ Makio Backend běží na 0.0.0.0:${PORT}`);
   console.log(`   GeoPas API: ${process.env.GEOPAS_API_KEY ? '✅ připojen' : '❌ chybí klíč'}`);
   console.log(`   Gemini API: ${process.env.GEMINI_API_KEY ? '✅ připojen' : '❌ chybí klíč'}`);
   const route = getRoutingSummary();
