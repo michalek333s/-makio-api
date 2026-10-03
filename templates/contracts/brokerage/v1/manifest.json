@@ -1,0 +1,16 @@
+{
+  "id": "brokerage",
+  "title": "Smlouva o zprostředkování",
+  "version": "v1.0.0",
+  "requiredKeys": [
+    "party_a_name",
+    "agency_name",
+    "broker_name",
+    "property_address",
+    "commission_pct",
+    "date_today_cs"
+  ],
+  "lawyer": null,
+  "approvedAt": null,
+  "note": "Skeleton pro vývoj. Ostrý právní text dodá advokát jako template.docx."
+}

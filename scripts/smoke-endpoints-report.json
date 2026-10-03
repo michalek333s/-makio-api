@@ -1,0 +1,160 @@
+{
+  "at": "2026-08-21T17:35:41.612Z",
+  "summary": {
+    "ok": 19,
+    "warn": 0,
+    "fail": 4
+  },
+  "health": {
+    "configured": true,
+    "devIp": "85.207.0.17",
+    "wsdpAccess": "test",
+    "probe": {
+      "name": "entityByTerm",
+      "ok": true,
+      "empty": false,
+      "ms": 1351,
+      "error": null
+    },
+    "sampleResults": 10,
+    "checkedAt": "2026-08-21T17:34:47.013Z"
+  },
+  "rows": [
+    {
+      "status": "ok",
+      "name": "probeGeopasHealth",
+      "ms": 1352,
+      "note": "wsdp=test"
+    },
+    {
+      "status": "ok",
+      "name": "entityByTerm",
+      "ms": 116,
+      "note": "items≈10"
+    },
+    {
+      "status": "ok",
+      "name": "searchProperty",
+      "ms": 379,
+      "note": "n=10 code=21743592 sample=Mánesova 409/12, Praha"
+    },
+    {
+      "status": "ok",
+      "name": "addressByCode",
+      "ms": 97,
+      "note": "keys=code,cp,co,co_letter,psc,definition_point,street_code,street_name,construction_code,construction_type,construction_land_kn_id,municipality_part_code land=—"
+    },
+    {
+      "status": "ok",
+      "name": "poiByAddress",
+      "ms": 121,
+      "note": "keys=0,1,2,3,4,5,6,7"
+    },
+    {
+      "status": "ok",
+      "name": "getFullPropertyAnalysis",
+      "ms": 1138,
+      "note": "wsdp=test flood=true amenities=true land=—"
+    },
+    {
+      "status": "fail",
+      "name": "land-dependent endpoints",
+      "note": "no landKnId resolved"
+    },
+    {
+      "status": "fail",
+      "name": "radonByPoint",
+      "ms": 39,
+      "note": "GeoPas API chyba 401: radonByPoint is not allowed."
+    },
+    {
+      "status": "ok",
+      "name": "chat:cena-strategie",
+      "ms": 1827,
+      "note": "intent=general_chat preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "ok",
+      "name": "chat:hypoteka-ltv",
+      "ms": 7870,
+      "note": "intent=general_chat preview=Ahoj! Klient s 20 % vlastních prostředků na byt za **5 milionů Kč** bude potřebovat hypoté"
+    },
+    {
+      "status": "ok",
+      "name": "chat:namitka-cena",
+      "ms": 3767,
+      "note": "intent=general_chat preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "fail",
+      "name": "chat:pravni-bremeno",
+      "ms": 5417,
+      "note": "intent=general_chat preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "ok",
+      "name": "chat:crm-soft",
+      "ms": 1636,
+      "note": "intent=crm_action preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "ok",
+      "name": "chat:agenda-hovor",
+      "ms": 1749,
+      "note": "intent=crm_action preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "ok",
+      "name": "chat:inzerat-rada",
+      "ms": 2070,
+      "note": "intent=general_chat preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "fail",
+      "name": "chat:yield-investice",
+      "ms": 1508,
+      "note": "intent=general_chat preview=Potřebuji upřesnit."
+    },
+    {
+      "status": "ok",
+      "name": "geopasChat:Analyzuj Lískovec 537",
+      "ms": 10197,
+      "note": "analysis=true preview=Ahoj, mrknul jsem na ten Lískovec 537. Mám tu rychlý report z GeoPas, tady jsou hlavní body, co jsem"
+    },
+    {
+      "status": "ok",
+      "name": "geopasChat:Analyzuj Mánesovu 12, Praha 2",
+      "ms": 1160,
+      "note": "analysis=true preview=GeoPas nenašel shodu pro **Mánesovu 12, Praha 2**.  Zkuste **obec + č.p.** (např. `Lískovec 537`) ne"
+    },
+    {
+      "status": "ok",
+      "name": "geopasChat:Zjisti LV pro parcelu 2201/1 Vinohra",
+      "ms": 10871,
+      "note": "analysis=true preview=Ahoj! Mrknul jsem na tu parcelu 2201/1, co jsi chtěl. Jenom pozor, v GeoPasu mi to vyskočilo jako By"
+    },
+    {
+      "status": "ok",
+      "name": "geopasChat:Jsou záplavy u Nádražní 1 Ostrava?",
+      "ms": 2277,
+      "note": "analysis=true preview=GeoPas nenašel shodu pro **Jsou záplavy u Nádražní 1**.  Zkuste **obec + č.p.** (např. `Lískovec 537"
+    },
+    {
+      "status": "ok",
+      "name": "geopasChat:Jaký je radon u Korunní 1 Praha?",
+      "ms": 2328,
+      "note": "analysis=true preview=GeoPas nenašel shodu pro **Jaký je radon u Korunní 1**.  Zkuste **obec + č.p.** (např. `Lískovec 537"
+    },
+    {
+      "status": "ok",
+      "name": "isRadarMarketQuery",
+      "note": "Jaké investiční byty jsou teď v Ostravě?"
+    },
+    {
+      "status": "ok",
+      "name": "radarMarketBrief",
+      "ms": 24,
+      "note": "**Ostrava — tržní situace (byty)**\n\nV cache zatím nemám aktuální inzeráty. **Obnova portálů běží na pozadí** (2–5 min).\n"
+    }
+  ]
+}

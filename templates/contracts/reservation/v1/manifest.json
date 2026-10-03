@@ -1,0 +1,17 @@
+{
+  "id": "reservation",
+  "title": "Rezervační smlouva",
+  "version": "v1.1.0-lawyer",
+  "requiredKeys": [
+    "kupujici_name",
+    "prodavajici_name",
+    "property_lv",
+    "purchase_price",
+    "reservation_deposit",
+    "reservation_deadline",
+    "date_today_cs"
+  ],
+  "lawyer": null,
+  "approvedAt": null,
+  "note": "Skeleton pro vývoj. Ostrý právní text dodá advokát jako template.docx."
+}

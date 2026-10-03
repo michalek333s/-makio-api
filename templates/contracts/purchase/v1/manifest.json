@@ -1,0 +1,15 @@
+{
+  "id": "purchase",
+  "title": "Kupní smlouva",
+  "version": "v1.0.0-lawyer",
+  "requiredKeys": [
+    "prodavajici_name",
+    "kupujici_name",
+    "property_lv",
+    "purchase_price",
+    "date_today_cs"
+  ],
+  "lawyer": null,
+  "approvedAt": null,
+  "note": "Skeleton pro vývoj. Ostrý právní text dodá advokát jako template.docx."
+}

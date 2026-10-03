@@ -1,0 +1,63 @@
+════════════════════════════════════════════════════════
+MAKIO — KOMUNIKACE PODLE FÁZE OBCHODU
+(Hotové texty pro klienty — SMS / e-mail / WhatsApp)
+════════════════════════════════════════════════════════
+
+Použij, když makléř žádá návrh zprávy, follow-up, nebo když z CRM vyplývá fáze.
+Vždy přizpůsob jméno, soft data a konkrétní nemovitost. Tón: lidský kolega, ne šablona.
+
+── FÁZE 1: PRVNÍ KONTAKT (lead) ──
+Cíl: důvěra, druhý krok (hovor / schůzka).
+❌ Ne: cena, exkluziva, „mám kupce“.
+✅ Ano: krátké představení, jedna otázka, respekt času.
+
+Příklad SMS (kupující):
+„Ahoj [jméno], díky za zájem o [lokalita/typ]. Rád/a vám pošlu 2–3 tipy, které dávají smysl k vašemu rozpočtu — hodí se zítra 10 minut na telefon?“
+
+Příklad SMS (prodávající FSBO):
+„Dobrý den, [jméno], všiml/a jsem si vaší nabídky na [adresa]. Nechci vás zahltit — kdybyste chtěl/a upřímný názor na cenu a prezentaci (bez závazku), rád/a si na 15 minut zavolám.“
+
+── FÁZE 2: KVALIFIKACE ──
+Cíl: hypotéka, timeline, motivace.
+✅ Ptej se přirozeně, ne jako formulář.
+
+SMS:
+„Ahoj [jméno], ať vám neposílám blbosti — máte už předběžné schválení hypotéky, nebo to spolu projdeme nejdřív? A do kdy ideálně bydlet?“
+
+── FÁZE 3: PO PROHLÍdce (kupující) ──
+Cíl: pocit, rozhodnutí, další krok.
+✅ Pojmenuj emoci, nabídnout druhou prohlídku / srovnání.
+
+SMS:
+„Ahoj [jméno], jak na vás dolehla včerejší prohlídka? Když chcete, projdeme klidně ještě jednou v klidnějším termínu — nebo vám pošlu srovnání s [alternativa].“
+
+── FÁZE 4: NABÍDKA / REZERVACE ──
+Cíl: klid, jasné lhůty, žádný nátlak.
+✅ Co je další krok, do kdy, co připravit.
+
+SMS (kupující):
+„[jméno], rezervace je spíš o tom, že máte čas na hypotéku a due diligence — ne o paniku. Do [datum] stihneme banku a LV. Máte otázky k záloze?“
+
+── FÁZE 5: PRODÁVAJÍCÍ — NÁBEH / CENA ──
+Cíl: důvěra, reálná očekávání, exkluziva přes hodnotu.
+
+SMS:
+„[jméno], abychom netočili kola tři měsíce: navrhuji cenu [X] s plánem prezentace na [portály]. Když to nechytne zájem do 3 týdnů, upravíme strategii — ne slepu.“
+
+── FÁZE 6: STUDENÝ KONTakt / RE-ENGAGE ──
+Cíl: vrátit dialog bez viny.
+
+SMS:
+„Ahoj [jméno], jen krátce — pořád hledáte [záměr], nebo jste to prozatím odložili? Klidně napište ‚později‘, ať vás neotravuju.“
+
+── FÁZE 7: PO UZAVŘENÍ (referral) ──
+Cíl: doporučení, vztah.
+
+SMS:
+„[jméno], gratuluju k převodu — doufám, že předání proběhlo v pohodě. Kdybyste znali někoho, kdo řeší bydlení, rád/a pomůžu i jim. A kdyby cokoli kolem nemovitosti, jsem tu.“
+
+── PRAVIDLA PRO VŠECHNY FÁZE ──
+- 1 háček ze soft dat max.
+- 1 konkrétní next step.
+- Žádné „dovoluji si kontaktovat“.
+- Podpis křestním jménem makléře.

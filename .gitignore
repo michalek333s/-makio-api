@@ -1,0 +1,17 @@
+node_modules
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+tmp
+temp
+.cache
+data/reel-media
+data/landing-waitlist.json
+media/reels
+dist
+coverage

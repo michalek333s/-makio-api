@@ -1,0 +1,418 @@
+{
+  "startedAt": "2026-08-21T17:32:42.251Z",
+  "health": {
+    "configured": true,
+    "devIp": "85.207.0.17",
+    "wsdpAccess": "test",
+    "probe": {
+      "name": "entityByTerm",
+      "ok": true,
+      "empty": false,
+      "ms": 1863,
+      "error": null
+    },
+    "sampleResults": 10,
+    "checkedAt": "2026-08-21T17:32:44.117Z"
+  },
+  "cases": [
+    {
+      "label": "search-vinohrady",
+      "query": "Vinohrady Praha",
+      "ms": 271,
+      "status": "ok",
+      "issues": [],
+      "summary": {
+        "count": 10,
+        "sample": [
+          "Vinohrady, Praha",
+          "Vinohrady 62/6, Praha",
+          "Vinohrady 75/2, Praha"
+        ]
+      }
+    },
+    {
+      "label": "search-ostrava",
+      "query": "Ostrava Poruba",
+      "ms": 206,
+      "status": "ok",
+      "issues": [],
+      "summary": {
+        "count": 10,
+        "sample": [
+          "Poruba, Ostrava",
+          "Poruba-sever, Ostrava",
+          "Poruba č.ev. 5, Ostrava"
+        ]
+      }
+    },
+    {
+      "label": "search-short",
+      "query": "ab",
+      "ms": 140,
+      "status": "ok",
+      "issues": [],
+      "summary": {
+        "count": 10,
+        "sample": [
+          "Abertamy",
+          "U Abácie 216, Valašské Meziříčí",
+          "U Abácie 1520, Valašské Meziříčí"
+        ]
+      }
+    },
+    {
+      "label": "search-parcel-like",
+      "query": "2201/1",
+      "ms": 164,
+      "status": "ok",
+      "issues": [],
+      "summary": {
+        "count": 10,
+        "sample": [
+          "2201/1, Bystřice nad Pernštejnem",
+          "2201/1, Nová Ves u Brloha",
+          "2201/1, Opava-Předměstí"
+        ]
+      }
+    },
+    {
+      "label": "addr-manesova",
+      "query": "Mánesova 12, Praha 2",
+      "ms": 1264,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:amenities_only"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "Mánesova 409/12, 12000, Praha",
+        "ku": "Vinohrady · parcela 2201",
+        "area": "437 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "mimo záplavovou zónu",
+        "safetyMode": "amenities_only",
+        "safetyScore": 80,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 10,
+        "transit": 8,
+        "valuation": "52 400 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**Mánesova 409/12, 12000, Praha**\n• Katastr: Vinohrady · parcela 2201\n• Výměra: 437 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: mimo záplavovou zónu\n• Rizika: ✅ Bez zjištěných rizik v dostupných registrech\n• Okolí: 10 "
+      }
+    },
+    {
+      "label": "addr-vinohrady",
+      "query": "Korunní 1, Praha Vinohrady",
+      "ms": 994,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:amenities_only"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "Korunní 820/1, 12000, Praha",
+        "ku": "Vinohrady · parcela 99",
+        "area": "2564 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "mimo záplavovou zónu",
+        "safetyMode": "amenities_only",
+        "safetyScore": 80,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 25,
+        "transit": 9,
+        "valuation": "307 700 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**Korunní 820/1, 12000, Praha**\n• Katastr: Vinohrady · parcela 99\n• Výměra: 2564 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: mimo záplavovou zónu\n• Rizika: ✅ Bez zjištěných rizik v dostupných registrech\n• Okolí: 25 ško"
+      }
+    },
+    {
+      "label": "addr-ostrava",
+      "query": "Nádražní 1, Ostrava",
+      "ms": 1230,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:amenities_only"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "Nádražní 639/1, 70200, Ostrava",
+        "ku": "Moravská Ostrava · parcela 394/2",
+        "area": "700 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "záplavové území",
+        "safetyMode": "amenities_only",
+        "safetyScore": 40,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 0,
+        "transit": 8,
+        "valuation": "31 500 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**Nádražní 639/1, 70200, Ostrava**\n• Katastr: Moravská Ostrava · parcela 394/2\n• Výměra: 700 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: záplavové území\n• Rizika: ⚠️ Záplavové území\n• Okolí: 0 škol, 8 MHD v dosahu (Geo"
+      }
+    },
+    {
+      "label": "addr-brno",
+      "query": "Masarykova 1, Brno",
+      "ms": 1271,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:amenities_only"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "Masarykova 444/1, 60200, Brno",
+        "ku": "Město Brno · parcela 192",
+        "area": "311 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "mimo záplavovou zónu",
+        "safetyMode": "amenities_only",
+        "safetyScore": 35,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 0,
+        "transit": 4,
+        "valuation": "14 000 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**Masarykova 444/1, 60200, Brno**\n• Katastr: Město Brno · parcela 192\n• Výměra: 311 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: mimo záplavovou zónu\n• Rizika: ✅ Bez zjištěných rizik v dostupných registrech\n• Okolí: 0 š"
+      }
+    },
+    {
+      "label": "parcel-vinohrady",
+      "query": "2201/1 Vinohrady",
+      "ms": 247,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:incomplete"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "2201/1, Bystřice nad Pernštejnem",
+        "ku": "Bystřice nad Pernštejnem · parcela 2201/1",
+        "area": "3731 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "mimo záplavovou zónu",
+        "safetyMode": "incomplete",
+        "safetyScore": null,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 0,
+        "transit": 0,
+        "valuation": "167 900 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**2201/1, Bystřice nad Pernštejnem**\n• Katastr: Bystřice nad Pernštejnem · parcela 2201/1\n• Výměra: 3731 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: mimo záplavovou zónu\n• Rizika: ✅ Bez zjištěných rizik v dostupných re"
+      }
+    },
+    {
+      "label": "parcel-slash",
+      "query": "123/1 Praha",
+      "ms": 383,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:incomplete"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "123/1, Polerady",
+        "ku": "Polerady · parcela 123/1",
+        "area": "112 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "záplavové území",
+        "safetyMode": "incomplete",
+        "safetyScore": null,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 0,
+        "transit": 0,
+        "valuation": "5 000 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**123/1, Polerady**\n• Katastr: Polerady · parcela 123/1\n• Výměra: 112 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: záplavové území\n• Rizika: ⚠️ Záplavové území\n• Okolí: 0 škol, 0 MHD v dosahu (GeoPas POI)\n• Safety score"
+      }
+    },
+    {
+      "label": "bad- gibberish",
+      "query": "asdfghjklqwerty 99999",
+      "ms": 139,
+      "status": "fail",
+      "issues": [
+        "throw:Nemovitost nenalezena. Zkuste číslo popisné + obec (např. Lískovec 537, Frýdek-Místek), ulici s číslem, nebo parcelu (2201/1 Vinohrady)."
+      ],
+      "summary": null
+    },
+    {
+      "label": "obec-only",
+      "query": "Frýdek-Místek",
+      "ms": 676,
+      "status": "warn",
+      "issues": [
+        "wsdp:test",
+        "safety:incomplete"
+      ],
+      "summary": {
+        "errorCode": null,
+        "notFound": false,
+        "address": "Frýdek č.ev. 8, Frýdek-Místek",
+        "ku": "Frýdek · parcela 5601/23",
+        "area": "34 m²",
+        "ownerAccess": "test",
+        "isTestOwner": true,
+        "ownerShown": false,
+        "lv": "—",
+        "flood": "mimo záplavovou zónu",
+        "safetyMode": "incomplete",
+        "safetyScore": null,
+        "safetyPartial": true,
+        "dataQualityOverall": "partial",
+        "schools": 0,
+        "transit": 0,
+        "valuation": "1 500 000 Kč",
+        "valuationNotePartial": true,
+        "fromCache": false,
+        "briefPreview": "**Frýdek č.ev. 8, Frýdek-Místek**\n• Katastr: Frýdek · parcela 5601/23\n• Výměra: 34 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: mimo záplavovou zónu\n• Rizika: ✅ Bez zjištěných rizik v dostupných registrech\n• Okolí: 0 šk"
+      }
+    },
+    {
+      "label": "cp-style",
+      "query": "Praha 2 č.p. 12",
+      "ms": 1724,
+      "status": "fail",
+      "issues": [
+        "throw:Nemovitost nenalezena. Zkuste číslo popisné + obec (např. Lískovec 537, Frýdek-Místek), ulici s číslem, nebo parcelu (2201/1 Vinohrady)."
+      ],
+      "summary": null
+    },
+    {
+      "label": "raw-manesova",
+      "query": "Mánesova 12, Praha 2",
+      "ms": 0,
+      "status": "ok",
+      "issues": [],
+      "summary": {
+        "hasParcel": true,
+        "hasFlood": true,
+        "hasAmenities": true,
+        "wsdpAccess": "test",
+        "keys": [
+          "property",
+          "parcel",
+          "flood",
+          "noise",
+          "geology",
+          "municipality",
+          "zoning",
+          "amenities",
+          "fetchedAt",
+          "wsdpAccess",
+          "geopasMeta",
+          "query",
+          "fromGeopasCache"
+        ]
+      }
+    },
+    {
+      "label": "raw-parcel",
+      "query": "2201/1 Vinohrady",
+      "ms": 0,
+      "status": "ok",
+      "issues": [],
+      "summary": {
+        "hasParcel": true,
+        "hasFlood": true,
+        "hasAmenities": true,
+        "wsdpAccess": "test",
+        "keys": [
+          "property",
+          "parcel",
+          "flood",
+          "noise",
+          "geology",
+          "municipality",
+          "zoning",
+          "amenities",
+          "fetchedAt",
+          "wsdpAccess",
+          "geopasMeta",
+          "query",
+          "fromGeopasCache"
+        ]
+      }
+    }
+  ],
+  "chat": [
+    {
+      "label": "chat-analyze-addr",
+      "message": "Analyzuj Mánesovu 12, Praha 2",
+      "ms": 1164,
+      "status": "fail",
+      "issues": [
+        "Nemovitost nenalezena. Zkuste číslo popisné + obec (např. Lískovec 537, Frýdek-Místek), ulici s číslem, nebo parcelu (2201/1 Vinohrady)."
+      ]
+    },
+    {
+      "label": "chat-lv-parcel",
+      "message": "Zjisti LV pro parcelu 2201/1 Vinohrady",
+      "ms": 229,
+      "status": "ok",
+      "path": "geopas-pipeline-brief",
+      "preview": "**2201/1, Bystřice nad Pernštejnem**\n• Katastr: Bystřice nad Pernštejnem · parcela 2201/1\n• Výměra: 3731 m²\n• LV / vlastník: **vyžaduje produkční WSDP** (testovací režim — neukazujeme fiktivní jméno)\n• Záplavy: mimo zápl",
+      "issues": [
+        "wsdp:test"
+      ]
+    },
+    {
+      "label": "chat-flood",
+      "message": "Jsou záplavy u Korunní 1 Praha Vinohrady?",
+      "ms": 0,
+      "status": "skip",
+      "path": "needs-http-jwt",
+      "preview": "Chat Gemini vyžaduje HTTP + JWT — viz druhá fáze",
+      "issues": [
+        "needs_auth_http"
+      ]
+    }
+  ],
+  "summary": {
+    "ok": 7,
+    "fail": 3,
+    "warn": 8
+  },
+  "finishedAt": "2026-08-21T17:32:54.220Z"
+}

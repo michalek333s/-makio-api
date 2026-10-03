@@ -1,0 +1,49 @@
+{
+  "name": "nemio-backend",
+  "version": "1.0.0",
+  "description": "Nemio Backend — API proxy pro GeoPas, Gemini a OpenAI",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch-path=src src/index.js",
+    "dev:stable": "node src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test ./test/*.test.js",
+    "test:radar": "node src/lib/radarRegions.selftest.js && node --test ./test/radarAgencyVerify.test.js ./test/radarValidate.test.js ./test/radarV2Store.test.js ./test/radarPHash.test.js ./test/radarColdCall.test.js ./test/facebookMarketplace.test.js ./test/apifyLastRun.test.js ./test/radarWatchdog.test.js",
+    "test:wsdp": "node src/lib/wsdpTestMode.selftest.js",
+    "smoke:chat": "node scripts/smoke-chat-brain.mjs",
+    "eval:chat:expertise": "node scripts/eval-chat-comprehensive.mjs",
+    "eval:chat:comprehensive": "node scripts/eval-chat-comprehensive.mjs",
+    "test:chat:routing": "node scripts/test-chat-routing.mjs",
+    "test:chat:all": "node src/lib/generalExpertQuery.selftest.js && node src/lib/chatContextLocality.selftest.js && node src/lib/localityInfoQuery.selftest.js && node src/lib/extractPropertyQuery.selftest.js && node src/lib/sanitizeChatVoice.selftest.js && node src/services/aiFeedback.governance.selftest.js && node src/services/clientComms.selftest.js && node src/services/chatPromptStack.selftest.js && node scripts/test-chat-routing.mjs",
+    "test:feedback:governance": "node src/services/aiFeedback.governance.selftest.js",
+    "test:comms": "node src/services/clientComms.selftest.js && node src/services/chatPromptStack.selftest.js",
+    "test:cors": "node src/lib/corsOrigin.selftest.js",
+    "smoke:release": "node scripts/smoke-release.mjs",
+    "beta:go-live": "node src/lib/productionGuards.selftest.js && node src/lib/wsdpTestMode.selftest.js && node scripts/beta-go-live.mjs",
+    "test:guards": "node src/lib/productionGuards.selftest.js",
+    "contracts:skeletons": "node scripts/generate-contract-skeletons.mjs",
+    "test:contracts": "node --test ./test/contract-template.test.js ./test/contract-library.test.js",
+    "warm:geopas": "node scripts/warm-geopas-cache.mjs",
+    "seed:locality": "node scripts/seed-locality-profiles.mjs",
+    "eval:accuracy": "node scripts/eval-makio-accuracy.mjs",
+    "check:feedback": "node scripts/check-ai-feedback.mjs",
+    "train:round": "node scripts/train-round.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "docxtemplater": "^3.68.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "fast-xml-parser": "^5.5.11",
+    "ffmpeg-static": "^5.3.0",
+    "helmet": "^7.1.0",
+    "multer": "^2.1.1",
+    "pdfkit": "^0.19.1",
+    "pizzip": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
